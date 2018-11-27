@@ -46,17 +46,6 @@
         </div>
     </div>
 
-    <footer class="page-footer font-small blue pt-4 mt-4" style="
-    text-align: center;
-    margin-top: 35px;
-    margin-bottom: 15px;
-    ">
-        <p style="
-        margin-bottom: 0px;
-        ">Dieser Service wird vom Exfynation Netzwerk betrieben.</p>
-        <a href="https://exfy.de/web/index.php/LegalNotice/" target="_blank" style="
-        color: #333333;
-        ">Impressum</a></footer>
 </div>
 </body>
 </html>
