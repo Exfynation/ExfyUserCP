@@ -1,0 +1,263 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require bootstrap
+*= require fonts
+*= require font-awesome
+*= require_self
+*/
+
+@media (min-width: 800px) {
+    html {
+        background: url('../images/background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #pageHeader {
+        position: relative;
+        margin-top: 35px;
+        z-index: 210;
+        border-radius: 8px 8px 0 0;
+    }
+    .desktop {}
+    .mobile {
+      display: none !important;
+    }
+}
+
+@media (max-width: 799px) {
+    #pageHeader {
+        position: relative;
+        z-index: 210;
+        border-radius: 8px 8px 0 0;
+    }
+    html {
+        background: #fff;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+   .navbar-inverse .navbar-nav > li > a {
+        margin-left: 5px;
+   }
+   .desktop {
+      display: none !important;
+   }
+   .mobile {}
+}
+
+.list-group-submenu .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-submenu .list-group-item:last-child {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.list-group-submenu:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.list-group-item.collapsed:last-of-type {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.btn-info:hover,
+.hover.btn-info,
+.btn-info:focus,
+.btn-info:active,
+.active.btn-info,
+.open > .btn-info.dropdown-toggle {
+    color: #fff;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.btn-block {
+    white-space: normal;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+    padding: 10px 19px;
+    font-size: 17px;
+    line-height: 1.471;
+    border-radius: 6px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.info {
+    background-color: #0f8fe2;
+    border-color: #0f8fe2;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    line-height: 1.5;
+    margin-top: 14px;
+    padding: 11px 14px 11px 48px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.info::after {
+    content: "\f05a";
+    font-family: FontAwesome;
+    font-size: 28px;
+    display: block;
+    height: 32px;
+    left: 13px;
+    margin-top: -19px;
+    position: absolute;
+    top: 50%;
+    width: 32px;
+}
+
+.success {
+    background-color: #26B80D;
+    border-color: #26B80D;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    line-height: 1.5;
+    margin-top: 14px;
+    padding: 11px 14px 11px 48px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.success::after {
+    content: "\f058";
+    font-family: FontAwesome;
+    font-size: 28px;
+    display: block;
+    height: 32px;
+    left: 13px;
+    margin-top: -19px;
+    position: absolute;
+    top: 50%;
+    width: 32px;
+}
+
+.error {
+    background-color: #E8582C;
+    border-color: #E8582C;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    line-height: 1.5;
+    margin-top: 14px;
+    padding: 11px 14px 11px 48px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.error::after {
+    content: "\f05e";
+    font-family: FontAwesome;
+    font-size: 28px;
+    display: block;
+    height: 32px;
+    left: 13px;
+    margin-top: -19px;
+    position: absolute;
+    top: 50%;
+    width: 32px;
+}
+
+.container {
+    background: white;
+}
+
+.info a,
+.info a:hover,
+.success a,
+.success a:hover,
+.error a,
+.error a:hover {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+a.externalURL::after {
+    content: "\f08e";
+    display: inline-block;
+    font-family: FontAwesome !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    margin-left: 4px;
+    vertical-align: -1px;
+}
+#head-toggle{
+    position: relative;
+    float: right;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.breadcrumb {
+    margin-top: 5px !important;
+}
+.dropdown > .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+}
